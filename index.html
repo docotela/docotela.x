@@ -1,0 +1,43 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Docotela X</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="nav-center">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="menu" id="menu">
+      <a href="index.html">Home</a>
+      <a href="collections.html">Collections</a>
+      <a href="members.html">Members Only</a>
+      <a href="gallery.html">Art Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <div class="center-content fade-in">
+    <img src="https://docotelax.github.io/logo.png" alt="Docotela X Logo" class="logo">
+    <h1 style="margin-top: 30px;">A Feeling You Can Wear</h1>
+    <a href="collections.html"><button class="enter-button">Enter the Gallery</button></a>
+  </div>
+
+  <footer>©️ Docotela X 2025. All rights reserved.</footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('menu').classList.toggle('show');
+    }
+  </script>
+
+</body>
+</html>
