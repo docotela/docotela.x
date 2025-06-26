@@ -1,0 +1,50 @@
+<!-- collections.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Collections - Docotela X</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="nav-center">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="menu" id="menu">
+      <a href="index.html">Home</a>
+      <a href="collections.html">Collections</a>
+      <a href="members.html">Members Only</a>
+      <a href="gallery.html">Art Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <div class="center-content fade-in">
+    <h1>Exclusive Collections</h1>
+    <p style="margin-top: 20px; max-width: 600px;">Each piece in our collections is a limited edition, handcrafted by emerging artists to reflect stories of freedom, struggle, and authenticity.</p>
+    <ul style="margin-top: 40px; list-style: none;">
+      <li style="margin: 20px 0;"><strong>The Feeling of Freedom</strong> – 10 pieces only</li>
+      <li style="margin: 20px 0;"><strong>4 Perspectives 1 Story</strong> – Limited drop</li>
+      <li style="margin: 20px 0;"><strong>The 8deity</strong> – 8 exclusive pieces</li>
+      <li style="margin: 20px 0;"><strong>Quiet Space</strong></li>
+      <li style="margin: 20px 0;"><strong>Lost in the Art of Chasing Freedom</strong></li>
+      <li style="margin: 20px 0;"><strong>Found in Emptiness</strong></li>
+    </ul>
+  </div>
+
+  <footer>©️ Docotela X 2025. All rights reserved.</footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('menu').classList.toggle('show');
+    }
+  </script>
+
+</body>
+</html>
