@@ -1,63 +1,30 @@
-<!-- members.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Members Only - Docotela X</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Docotela X</title>
   <link rel="stylesheet" href="styles.css">
-  <script>
-    function checkPassword() {
-      const password = document.getElementById("password").value;
-      if (password === "memberson1y") {
-        document.getElementById("protected-content").style.display = "block";
-        document.getElementById("login-form").style.display = "none";
-      } else {
-        alert("Incorrect password.");
-      }
-    }
-  </script>
 </head>
-<body>
+<body class="bg-contact">
+  <header class="nav-header">
+    <nav class="top-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <div class="navbar">
-    <div class="nav-center">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </div>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-    <div class="menu" id="menu">
-      <a href="index.html">Home</a>
-      <a href="collections.html">Collections</a>
-      <a href="members.html">Members Only</a>
-      <a href="gallery.html">Art Gallery</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </div>
+  <main class="center-content fade-in">
+    <h1 class="logo-text">Let's Connect</h1>
+    <p class="tagline">Have questions, collaborations, or press inquiries?</p>
+    <a href="mailto:info@docotelax.com" class="cta-button">Email Us</a>
+  </main>
 
-  <div class="center-content fade-in">
-    <div id="login-form">
-      <h2>Members Only</h2>
-      <p style="margin-top: 10px;">Enter password to access exclusive content.</p>
-      <input type="password" id="password" placeholder="Password" style="padding: 10px; margin-top: 20px;">
-      <br><br>
-      <button class="enter-button" onclick="checkPassword()">Enter</button>
-    </div>
-
-    <div id="protected-content" style="display: none;">
-      <h2>Welcome, Collector.</h2>
-      <p style="margin-top: 20px;">This is your early access to unreleased collections, behind-the-scenes, and more.</p>
-    </div>
-  </div>
-
-  <footer>©️ Docotela X 2025. All rights reserved.</footer>
-
-  <script>
-    function toggleMenu() {
-      document.getElementById('menu').classList.toggle('show');
-    }
-  </script>
-
+  <footer>
+    <p>&copy; 2025 Docotela X. All rights reserved.</p>
+  </footer>
 </body>
 </html>
