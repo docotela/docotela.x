@@ -1,47 +1,30 @@
-<!-- gallery.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Art Gallery - Docotela X</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery - Docotela X</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="bg-gallery">
+  <header class="nav-header">
+    <nav class="top-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <div class="navbar">
-    <div class="nav-center">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </div>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-    <div class="menu" id="menu">
-      <a href="index.html">Home</a>
-      <a href="collections.html">Collections</a>
-      <a href="members.html">Members Only</a>
-      <a href="gallery.html">Art Gallery</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </div>
+  <main class="center-content fade-in">
+    <h1 class="logo-text">The Art Gallery</h1>
+    <p class="tagline">Each piece tells a story. Each brushstroke, a whisper of freedom.</p>
+    <a href="collections.html" class="cta-button">Explore Collections</a>
+  </main>
 
-  <div class="center-content fade-in">
-    <h1>The Art of Fashion</h1>
-    <p style="margin-top: 20px; max-width: 600px;">Each piece is more than clothing — it’s a canvas of struggle, vision, and freedom.</p>
-    <div style="margin-top: 50px; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-      <img src="https://via.placeholder.com/300x400?text=Piece+1" style="max-width: 300px;">
-      <img src="https://via.placeholder.com/300x400?text=Piece+2" style="max-width: 300px;">
-      <img src="https://via.placeholder.com/300x400?text=Piece+3" style="max-width: 300px;">
-    </div>
-  </div>
-
-  <footer>©️ Docotela X 2025. All rights reserved.</footer>
-
-  <script>
-    function toggleMenu() {
-      document.getElementById('menu').classList.toggle('show');
-    }
-  </script>
-
+  <footer>
+    <p>&copy; 2025 Docotela X. All rights reserved.</p>
+  </footer>
 </body>
 </html>
