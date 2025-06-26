@@ -1,43 +1,33 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Docotela X</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="bg-home">
+  <header class="nav-header">
+    <nav class="top-nav">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <div></div><div></div><div></div>
+      </div>
+    </nav>
+  </header>
 
-  <div class="navbar">
-    <div class="nav-center">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </div>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-    <div class="menu" id="menu">
-      <a href="index.html">Home</a>
-      <a href="collections.html">Collections</a>
-      <a href="members.html">Members Only</a>
-      <a href="gallery.html">Art Gallery</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </div>
+  <main class="center-content fade-in">
+    <h1 class="logo-text">DOCOTELA X</h1>
+    <p class="tagline">A Feeling You Can Wear</p>
+    <a href="collections.html" class="cta-button">Enter the Gallery</a>
+  </main>
 
-  <div class="center-content fade-in">
-    <img src="images/homepage-hero.jpg" alt="Docotela X" style="max-width: 100%; margin-bottom: 30px;">    <img src="https://docotelax.github.io/logo.png" alt="Docotela X Logo" class="logo">
-    <h1 style="margin-top: 30px;">A Feeling You Can Wear</h1>
-    <a href="collections.html"><button class="enter-button">Enter the Gallery</button></a>
-  </div>
-
-  <footer>©️ Docotela X 2025. All rights reserved.</footer>
-
-  <script>
-    function toggleMenu() {
-      document.getElementById('menu').classList.toggle('show');
-    }
-  </script>
-
+  <footer>
+    <p>&copy; 2025 Docotela X. All rights reserved.</p>
+  </footer>
 </body>
 </html>
