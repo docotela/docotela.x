@@ -1,44 +1,30 @@
-<!-- contact.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact - Docotela X</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="bg-contact">
+  <header class="nav-header">
+    <nav class="top-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <div class="navbar">
-    <div class="nav-center">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </div>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-    <div class="menu" id="menu">
-      <a href="index.html">Home</a>
-      <a href="collections.html">Collections</a>
-      <a href="members.html">Members Only</a>
-      <a href="gallery.html">Art Gallery</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </div>
+  <main class="center-content fade-in">
+    <h1 class="logo-text">Let's Connect</h1>
+    <p class="tagline">Have questions, collaborations, or press inquiries?</p>
+    <a href="mailto:info@docotelax.com" class="cta-button">Email Us</a>
+  </main>
 
-  <div class="center-content fade-in">
-    <h1>Contact Us</h1>
-    <p style="margin-top: 20px;">Reach out, collaborate, or just say hello:</p>
-    <p style="margin-top: 20px;"><strong>Email:</strong> contact@docotelax.com</p>
-    <p><strong>Instagram:</strong> <a href="https://instagram.com/docotelax" target="_blank">@docotelax</a></p>
-  </div>
-
-  <footer>©️ Docotela X 2025. All rights reserved.</footer>
-
-  <script>
-    function toggleMenu() {
-      document.getElementById('menu').classList.toggle('show');
-    }
-  </script>
-
+  <footer>
+    <p>&copy; 2025 Docotela X. All rights reserved.</p>
+  </footer>
 </body>
 </html>
